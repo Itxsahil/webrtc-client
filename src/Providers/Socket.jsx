@@ -9,7 +9,7 @@ export function useSocket() {
 }
 
 export function SocketProvider({children}) {
-    const socket = useMemo(() => io("http://localhost:3000"), []);
+    const socket = useMemo(() => io("https://web-rtc-9on3.onrender.com"), []);
     return (
         <SocketContext.Provider value={socket}>
             {children}
